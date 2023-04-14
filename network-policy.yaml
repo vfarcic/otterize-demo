@@ -1,0 +1,15 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: access-to-server-from-otterize-tutorial-npol
+  namespace: otterize-tutorial-npol
+spec:
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: client
+  podSelector:
+    matchLabels:
+      app: server
