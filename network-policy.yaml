@@ -2,8 +2,8 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: access-to-server-from-otterize-tutorial-npol
-  namespace: otterize-tutorial-npol
+  name: silly-demo
+  namespace: demo
 spec:
   ingress:
   - from:
