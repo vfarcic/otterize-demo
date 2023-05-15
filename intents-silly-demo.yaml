@@ -1,11 +1,10 @@
 apiVersion: k8s.otterize.com/v1alpha2
 kind: ClientIntents
 metadata:
-  name: client
-  namespace:  otterize-tutorial-npol
+  name: silly-demo
 spec:
   service:
-    name: client
+    name: silly-demo
   calls:
-    - name: server
+    - name: postgresql
       type: http
