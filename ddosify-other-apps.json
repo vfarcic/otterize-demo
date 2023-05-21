@@ -1,0 +1,25 @@
+{
+    "iteration_count": 100,
+    "duration": 5,
+    "debug" : false,
+    "load_type": "linear",
+    "engine_mode": "distinct-user",
+    "output": "stdout",
+    "steps": [
+        {
+            "id": 1,
+            "url": "http://silly-demo.{{$INGRESS_HOST}}.nip.io/ping?url=http://app1:8080",
+            "method": "GET"
+        },
+        {
+            "id": 2,
+            "url": "http://silly-demo.{{$INGRESS_HOST}}.nip.io/ping?url=http://app2:8080",
+            "method": "GET"
+        },
+        {
+            "id": 3,
+            "url": "http://silly-demo.{{$INGRESS_HOST}}.nip.io/ping?url=http://app3:8080",
+            "method": "GET"
+        }
+    ]
+}

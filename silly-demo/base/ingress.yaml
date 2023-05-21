@@ -8,6 +8,7 @@ metadata:
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
+  ingressClassName: traefik
   rules:
     - http:
         paths:
@@ -18,4 +19,4 @@ spec:
                 name: silly-demo
                 port:
                   number: 8080
-      host: silly-demo.127.0.0.1.nip.io
+      host: silly-demo.212.2.244.223.nip.io

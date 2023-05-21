@@ -4,11 +4,7 @@ metadata:
   name: traefik
 spec:
   service:
-    name: silly-demo
+    name: traefik
   calls:
-    - name: postgresql
-      type: http
-    - name: app1
-      type: http
-    - name: app3
+    - name: silly-demo.demo
       type: http
